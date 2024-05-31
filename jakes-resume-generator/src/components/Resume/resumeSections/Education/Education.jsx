@@ -1,7 +1,7 @@
 import React from 'react';
 import './Education.css';
 
-const EducationItem = ({ degree, school, startDate, endDate, location }) => (
+const EducationItem = ({ degree, school, startDate, endDate, location, accolades }) => (
     <>
         <div className='top'>
             <h3 className="education-item-school">{school}</h3>

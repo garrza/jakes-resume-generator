@@ -27,12 +27,7 @@ const Resume = ({ resumeData }) => {
       <Education educationList={education} />
       <Experience experienceList={experience} />
       <Projects projectList={projects} />
-      <Skills
-        languages={skills.languages}
-        frameworks={skills.frameworks}
-        tools={skills.tools}
-        libraries={skills.libraries}
-      />
+      <Skills skills={skills} />
     </div>
   );
 };
