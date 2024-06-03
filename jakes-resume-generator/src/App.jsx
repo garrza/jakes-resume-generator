@@ -58,16 +58,15 @@ const App = () => {
     },
   });
 
-  const handleSubmit = (e, updatedData) => {
-    e.preventDefault();
+  const handleUpdate = (updatedData) => {
     setResumeData(updatedData);
   };
-
+  
   return (
     <div className="app">
       <Header />
       <Resume resumeData={resumeData} />
-      <Form initialData={resumeData} onSubmit={handleSubmit} />
+      <Form initialData={resumeData} onUpdate={handleUpdate} />
     </div>
   );
 };
